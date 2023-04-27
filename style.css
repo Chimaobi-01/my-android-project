@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+body {
+    text-align: center;
+    font-size: 13pt;
+}
+
+main {
+    margin: 10vh 30px;
+}
+
+.one {
+    color: hsl(303, 10%, 53%);
+}
+
+h1 {
+    font-size: 30pt;
+}
+
+.rated {
+    border-radius: 0.5em;
+    padding: 1em;
+    background: hsl(300, 24%, 96%);
+    margin-bottom: 1em;
+}
+
+.rated>figcaption {
+    margin-top: 0.5em;
+}
+
+.brown {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.pink {
+    color: hsl(333, 80%, 67%);
+}
+
+.p {
+
+    line-height: 1.4em;
+    /*   padding: 1em; */
+    font-weight: 500;
+
+}
+
+.card {
+    background: hsl(300, 43%, 22%);
+    color: hsl(300, 43%, 22%);
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.card>figure {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    margin: 1em;
+}
+
+.card>figure figcaption {
+    text-align: left;
+}
+
+.card>figure img {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100%;
+}
+
+.card>figure h2 {
+    font-size: 13pt;
+    color: hsl(0, 0%, 100%);
+}
+
+.card p {
+    text-align: left;
+    color: hsl(300, 24%, 96%);
+}
+
+
+@media screen and (min-width: 500px) {
+
+    .grid-container {
+
+        min-width: 800px;
+        max-width: 900px;
+        margin: 10vh auto;
+
+    }
+
+    .top-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4em;
+    }
+
+    .top-section .box1 {
+        flex: 0 1 400px;
+        text-align: left;
+
+    }
+
+    top-section .box2 {
+        margin: 4em;
+    }
+
+    .one {
+
+        width: 400px;
+        padding-top: 1em;
+    }
+
+    .rate1 {
+        position: relative;
+        right: 60px;
+    }
+
+    .rate2 {
+        position: relative;
+        right: 30px;
+    }
+
+    .rated figcaption {
+        display: inline;
+    }
+
+    .bottom-section {
+        display: flex;
+
+        gap: 1em;
+    }
+
+    .bottom-section .card {
+        padding: 2em;
+        flex: 1 1 auto;
+
+        font-size: 10pt;
+    }
+
+    .card figure {
+
+        margin: 0 0 1em 0;
+    }
+
+    .card1 {
+        position: relative;
+        top: 20px;
+    }
+
+    .card2 {
+        position: relative;
+        top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .one {
+        padding: 1em 0 2em 0;
+    }
+    .bottom-section {
+        padding-top: 2em;
+    }
+    .card {
+        height: 250px;
+    }
+}
